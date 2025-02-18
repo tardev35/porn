@@ -115,10 +115,13 @@ add_filter(
 
 	<?php endif; ?>
 
-	<div class="container">
+	<div class="container mb-4">
 		<div class="row">
 			<div class="video-loop col-xl-12 col-lg-12 col-md-12 col-12">
+			<div class="header-video">
 				<h2>คลิปหลุด VK</h2>
+				<a class="more-videos label" href="/category/คลิปหลุด-vk"	target="_self" rel="follow noopener noreferrer"><i style="font-size: 18px;" class="fa fa-plus"></i></a>
+				</div>
 				<div class="row no-gutters">
 					<?php
 					$argsvk = array(
@@ -150,7 +153,11 @@ add_filter(
 	<div class="container">
 		<div class="row">
 			<div class="video-loop col-xl-12 col-lg-12 col-md-12 col-12">
+				<div class="header-video">
 				<h2>คลิปหลุด นึกศึกษา</h2>
+				<a class="more-videos label" href="category/คลิปหลุดนักศึกษา"	target="_self" rel="follow noopener noreferrer"><i style="font-size: 18px;" class="fa fa-plus"></i></a>
+				</div>
+				
 				<div class="row no-gutters">
 					<?php
 					$argsst = array(
