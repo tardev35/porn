@@ -2985,3 +2985,147 @@ section.bage a:before{
     margin-right: .5em;
   
 }
+#navbarNavDropdown{
+    z-index: 99;
+}
+body{
+	font-family: lineseed !important;
+	background-color:#181818 !important
+}
+.logo-img img {
+    max-height: 47px;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+	font-size: 15px;
+}
+/* Style for the card container */
+.card-container {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+}
+.video-tags-shortcode{
+	font-size: 18px;
+}
+
+/* Style for individual cards */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: calc(33.333% - 20px); /* Default width for 3 columns on large screens */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the cards */
+.card:hover {
+    transform: translateY(-10px); /* Lift the card slightly */
+}
+
+/* Style for the card image */
+.card img {
+    width: 100%;
+    height: auto; /* Ensures image maintains its aspect ratio */
+    object-fit: cover; /* Crop the image to fill the card without stretching */
+}
+
+/* Style for the card content */
+.card-body {
+    padding: 15px;
+}
+
+/* Title inside the card */
+.card-body h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+/* Description inside the card */
+.card-body p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Link styling for the image and title */
+.card-body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive design: 2 columns on mobile (smaller screens) */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 10px); /* 2 columns of cards on mobile */
+    }
+}
+
+/* Responsive design: 2 columns on very small screens */
+@media (max-width: 480px) {
+    .card {
+        width: calc(50% - 10px); /* 2 columns on very small screens as well */
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1600px !important;
+    }
+}
+.video-block .video-img , .owl-carousel .video-img  {
+	border-radius: 10px !important;
+}
+.slide{
+	max-width:100% !important;
+	margin:20px 5px !important;
+}
+.video-block{
+	position:relative;
+}
+.video-block .video-datas{
+	   z-index: 99;
+    position: absolute;
+	  color: #ffffff !important;
+	  bottom: 40px !important;
+}
+.video-block .video-datas i{
+	  color: #ffffff !important;
+}
+.video-block .views-number{
+	background-color: #000000bf !important;
+  padding: 0px 5px;
+  border-radius: 5px;
+	
+}
+@media (max-width: 480px) {
+	.video-block .video-datas{
+		top: 173px !important;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.video-block .video-datas{
+		top: 100px !important;
+	}
+}
+@media only screen and (max-width: 1380px) {
+	.video-block .video-datas{
+		top: 104px !important;
+	}
+}
+@media only screen and (max-width: 1680px) {
+	.video-block .video-datas{
+		bottom: 40px !important;
+	}
+}
+article.page p {
+    color: #332121 !important;
+}
+.dropdown-item:hover {
+    color: #1c1c1c !important;
+    text-decoration: none;
+    background-color: #ff9900 !important;
+}

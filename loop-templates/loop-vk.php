@@ -17,7 +17,7 @@ if ( has_post_thumbnail() ) {
 }
 ?>
 
-<div class="col-6 col-md-6 col-lg-6 test">
+<div class="col-2 col-md-2 col-lg-2 test">
 	<div class="video-block <?php echo ( '' !== $trailer_url ? 'video-with-trailer' : 'thumbs-rotation' ); ?>"
 		data-post-id="<?php echo intval( get_the_ID() ); ?>"
 		<?php if ( ! $trailer_url ) : ?>
