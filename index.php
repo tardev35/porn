@@ -80,7 +80,7 @@ if ($room_querys->have_posts()) {
 			<?php ftt_pagination(); ?>
 		</div>
 		<div class="video-loop col-xl-3 col-lg-3 col-md-3 col-12 right-side">
-			<h2>คลิปหลุด ห้ามพลาด 🔥🔥</h2>
+			<h2>Onlyfans ห้ามพลาด 🔥🔥</h2>
 		<div class="row no-gutters">
 		   <?php 
 		   $args = array(
@@ -112,8 +112,38 @@ if ($room_query->have_posts()) {
 </div>
 	<?php if ( $ads['page_bottom'] ) : ?>
 		<div class="happy-section"><?php echo $ads['page_bottom']; ?></div>
-
+    
 	<?php endif; ?>
+	<div class="row">
+	<div class="video-loop col-xl-12 col-lg-12 col-md-12 col-12">
+			<h2>คลิปหลุด VK</h2>
+		<div class="row no-gutters">
+		   <?php 
+		   $argsvk = array(
+			'post_type' => 'post', 
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'category', 
+					'field'    => 'slug',
+					'terms'    => '%e0%b8%84%e0%b8%a5%e0%b8%b4%e0%b8%9b%e0%b8%ab%e0%b8%a5%e0%b8%b8%e0%b8%94-vk' 
+				)
+			),
+			'posts_per_page' => 6
+		);
+		$vk_query = new WP_Query($argsvk);
+if ($vk_query->have_posts()) {
+    while ($vk_query->have_posts()) {
+        $vk_query->the_post();
+		get_template_part('loop-templates/loop', 'vk')
+        ?>
+        <?php
+    }
+    wp_reset_postdata();
+}		 
+	?>
+		</div>
+		</div>
+	</div>
 	<div class="hero">
 		<div class="container" tabindex="-1">
 			<div class="hero-text">
