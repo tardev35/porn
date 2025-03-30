@@ -29,7 +29,7 @@ function display_video_tags_shortcode() {
     if (!empty($tags) && !is_wp_error($tags)) {
         $output = '<div class="video-tags-shortcode"><ul>';
         foreach ($tags as $tag) {
-            $output .= '<li><a href="' . get_term_link($tag) . '">' . esc_html($tag->name) . '</a></li>';
+            $output .= '<li><a href="' . get_term_link($tag) . '"><h2 style="font-size:16px;margin:0;">' . esc_html($tag->name) . '</h2></a></li>';
         }
         $output .= '</ul></div>';
     } else {
@@ -79,7 +79,7 @@ function display_video_cat_shortcode() {
             //$output .= '<a href="' . esc_url(get_term_link($cat)) . '"><h3>' . esc_html($cat->name) . '</h3></a>';
 
             if (!empty($cat->description)) {
-                $output .= '<a href="' . esc_url(get_term_link($cat)) . '"><h2 style="color:black;">' . esc_html($cat->description) . '</h2></a>';
+                $output .= '<a href="' . esc_url(get_term_link($cat)) . '"><h2 style="color:#3b3333;font-weight: 500;font-size:18px">' . esc_html($cat->description) . '</h2></a>';
             }
 
             $output .= '</div></li>';  // Close list item
@@ -129,8 +129,7 @@ function display_video_actor_shortcode() {
             }
 
             $output .= '<div class="card-body">';
-            $output .= '<a href="' . esc_url(get_term_link($actor)) . '"><h3>' . esc_html($actor->name) . '</h3></a>';
-
+            $output .= '<a href="' . esc_url(get_term_link($actor)) . '"><h2 style="color:#666;margin:0;">' . esc_html($actor->name) . '</h2></a>';
             if (!empty($actor->description)) {
                 $output .= '<p>' . esc_html($actor->description) . '</p>';
             }

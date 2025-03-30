@@ -30,7 +30,7 @@ add_filter(
 		<div class="page-header">
 			<h1 class="widget-title mt-4 tedddd44"><?php echo ucfirst( get_theme_mod( 'seo_video_cat_title', $video_cat->name ) ); ?></h1>
 			<?php get_template_part( 'template-parts/content', 'filters' ); ?>
-			<p style="font-size:16px"> <?php echo $video_cat->description ?></p>
+			<h2 style="font-size:16px"> <?php echo $video_cat->description ?></h2>
 		</div>
 		<div class="video-loop mh800">
 			<div class="row no-gutters">
