@@ -76,10 +76,10 @@ function display_video_cat_shortcode() {
             }
 
             $output .= '<div class="card-body">';
-            $output .= '<a href="' . esc_url(get_term_link($cat)) . '"><h3>' . esc_html($cat->name) . '</h3></a>';
+            //$output .= '<a href="' . esc_url(get_term_link($cat)) . '"><h3>' . esc_html($cat->name) . '</h3></a>';
 
             if (!empty($cat->description)) {
-                $output .= '<p>' . esc_html($cat->description) . '</p>';
+                $output .= '<a href="' . esc_url(get_term_link($cat)) . '"><h2 style="color:black;">' . esc_html($cat->description) . '</h2></a>';
             }
 
             $output .= '</div></li>';  // Close list item

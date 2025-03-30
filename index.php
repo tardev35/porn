@@ -14,6 +14,20 @@ add_filter(
 	}
 );
 ?>
+<div class="container">		
+					<?php if (is_front_page()) : ?>
+					 <?php 
+					$homepage_h1 = get_field('homepage_h1', 'options');
+					 if (!empty($homepage_h1)) :
+				 echo '<h1 style="margin-bottom:5px;margin-top:10px;font-size:32px;text-align:center">' . esc_html($homepage_h1) . '</h1>';
+				  else :
+				   echo '<h1>Default Homepage Title</h1>'; // ใช้ค่าเริ่มต้นหากไม่มีข้อมูล
+				   endif;
+					  ?>
+					  <?php endif; ?>
+
+</div>
+
 <div class="slide">
 	<div class="owl-carousel owl-theme">
 		<?php
